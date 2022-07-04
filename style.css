@@ -95,30 +95,5 @@
 filter: invert(33%) sepia(33%) saturate(2771%) hue-rotate(292deg) brightness(88%) contrast(94%);
         }
 
-      .grid-img{
-        --gap : 16px;
-        --num-cols: 4;
-        --row-height: 300px;
-
-        box-sizing: border-box;
-        padding: var(--gap);
-        
-        display: grid;
-        grid-template-columns: repeat(var(--num-cols), 1fr);
-        grid-auto-rows: var(--row-height);
-        gap: var(--gap);
-        margin-left: 50px;
-        margin-right: 50px;
-     
-    
-    }
-
-    .catalag{
-        margin-top: 600px;
-        margin-bottom: 150px;
-        
-    }
-    .catalag img{
-        width: 500px;      
-    }
+ 
       
