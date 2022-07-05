@@ -3,6 +3,9 @@ body{
  
 
 }
+h1{
+    text-align: center;
+}
  .head {
       background-color: #2c2c2c;
       height: 30px;
@@ -24,15 +27,51 @@ body{
   }
 /* <---   GRID SESSION   ---> */
 
-  .grid-img {
-    flex: auto;
-    display: flex;
-    justify-content: top;
-    align-items: center;
-    margin: 10px;
-    height: 1000px;
-}
+  .grid-img {   
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows: 250px;
+    grid-auto-flow: dense;
 
+    
+}
+   .grid-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    box-shadow: 2px 2px black;
+    border-radius: 10px;
+    }
+
+@media(max-width: 100px){
+
+    
+    .low{
+        grid-row: span 2;     
+    }
+}
+    
+    .medium{
+        grid-column: span 2;
+            margin: 10px ;
+            margin-left: 10px;
+    }
+    
+    .high{
+            margin: 10px;
+        grid-row: span 2;
+        grid-column: span 2;
+        
+    }
+    
+    
+    
+
+   
 /* <--- END GRID SESSION ---> */
 
 
@@ -109,7 +148,67 @@ body{
         #radio4:checked ~ .first {
         margin-left: -60%;
         }
-                         
+             
+        
     
     /* <--- END SLIDE SESSION ---> */
                  
+    /* Slide button */
+        button{
+          
+    
+            justify-items: center;
+            align-items: center;
+            
+        }
+
+            .navigation-manual-btn {
+                position: absolute;
+                width: 800px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -250px;
+               
+            }
+                .btn1{
+                    border: 2px solid white;
+                    padding: 5px;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    transition: 1s;
+                    width: 40px;
+                    height: 40px;
+                   
+                }
+        .btn2{
+         
+                border: 2px solid white;
+                    padding: 5px;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    transition: 1s;
+                    margin-left: 80%;
+                    width: 40px;
+                    height: 40px;
+                  
+        }
+       
+        
+           #radio5:checked  ~ .first{
+               margin-left: 0;
+
+           }
+           
+           .radio5:active  {
+                border-color: black;
+           }
+          
+                       
+    
+           #radio6:checked ~.first {
+            margin-left: -20%;
+            
+           }
+                
+    /* End Slide button */
