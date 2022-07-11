@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leo Club - Fotos</title>
-    <link rel="stylesheet" type="text/css" href="photos.css">
+    <link rel="stylesheet" type="text/css" href="src/css/photos.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.jpg">
 </head>
 
 <body>
@@ -51,6 +52,7 @@
             <img src="img/gato5.jpg">
         </div>
     </div>
+
     <h1>
 
         Slide
@@ -100,6 +102,7 @@
         </div>
 
     </div>
+
     <h1>
 
         Slide button
@@ -110,37 +113,73 @@
         <div class="slider">
             <div class="slides">
 
-                <input type="radio" name="btn" id="radio5">
 
 
-                <input type="radio" name="btn" id="radio6">
+
+
+                <div class="slide first" id="img-mag">
+                    <img src="img/gato1.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/gato2.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/gato3.jpg">
+                </div>
+                <div class="slide">
+                    <img src="img/gato4.jpg">
+                </div>
+
+                <script src="src/js/SlideButton.js"></script>
+            </div>
+
+            <div class="navigation-manual-btn">
+                <button class="btn1" onclick="prev()">
+                    <img src="img/right-arrow.png">
+                </button>
+                <button class="btn2" onclick="next()">
+                    <img src="img/right-arrow.png">
                 </button>
 
+            </div>
 
-                <div class="slide first">
-                    <img src="img/gato1.jpg" id="img1">
-                </div>
+        </div>
+    </div>
+
+
+    <h1>
+
+        Button Next
+
+    </h1>
+    <div class="slide-session">
+
+        <div class="slider">
+            <div class="slides">
+
+
+
+
                 <div class="slide">
-                    <img src="img/gato2.jpg" id="img2">
-                </div>
-                <div class="slide">
-                    <img src="img/gato3.jpg" id="img3">
-                </div>
-                <div class="slide">
-                    <img src="img/gato4.jpg" id="img4">
-                </div>
+                    <img src="img/gato1.jpg" id="img-btn">
 
-
-
+                </div>
 
             </div>
 
             <div class="navigation-manual-btn">
-                <label for="radio5" class="btn1"></label>
-                <label for="radio6" class="btn2"></label>
+                <button class="btn1" onclick="btnPrev()">
+                    <img src="img/right-arrow.png">
+                </button>
+                <button class="btn2" onclick="btnNext()">
+                    <img src="img/right-arrow.png">
+                </button>
+                <script src="src/js/ButtonNext.js"></script>
             </div>
 
         </div>
+    </div>
+
 </body>
 
 </html>
